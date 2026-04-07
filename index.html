@@ -8,11 +8,8 @@
      <a-scene>
 
          <a-entity environment="preset: contact; dressingAmount: 20">
-            material="shader: skyshader; color: #FFF; side: back; npot: true"
-           
+            material="shader: skyshader; color: #FFF; side: back; npot: true"     
          </a-entity>
-
-       
        
         <!-- OBJ Model with materials -->
         <a-entity 
@@ -27,7 +24,10 @@
         <a-light type="ambient" color="#ccc"></a-light>
         <a-light type="directional" intensity="1" position="1 2 0"></a-light>
 
-        
+       <a-entity text="value: Hello, A-Frame; color: #FAFAFA; width: 5; anchor: align"
+          position="-0.9 0.2 -3"
+          scale="1.5 1.5 1.5"></a-entity>
+       
         <!-- Helper: camera with controls -->
         <a-camera position="0 1.6 1"></a-camera>
     </a-scene>
